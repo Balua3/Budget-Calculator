@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Budget Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+<body>
+    <div class="budget-container">
+        <div class="app-title"><h1>Budget Calculator</h1></div>
+        <div class="budget-header">
+            <div class="balance">
+                <div class="title">Balance</div>
+                <div class="value">₹ 0</div>
+            </div>
+        </div>
+        <div class="budget-header">
+            <div class="income">
+                <div class="title">Income</div>
+                <div class="value">₹ 0</div>
+            </div>
+        </div>
+        <div class="budget-header">
+            <div class="expense">
+                <div class="title">Expense</div>
+                <div class="value">₹ 0</div>
+            </div>
+        </div>
+    </div>
+    <div class="budget-dashboard">
+        <div class="dash-title">Dashboard</div>
+        <div class="toggle">
+            <div class="tab2">Income</div>
+            <div class="tab1">Expenses</div>
+            <div class="tab3 active">All</div>
+        </div>
+        <div class="hide" id="income">
+            <ul class="list"></ul>
+            <div class="input">
+                <input type="text" id="income-title-input" name="title" placeholder="Title">
+                <input type="number" id="income-amount-input" name="amount" placeholder="₹ 0">
+                <div class="add-income"><img src="icon/plus.png" alt="Add Income"></div>
+            </div>
+        </div>
+
+        <div class="hide" id="expense">
+            <ul class="list"></ul>
+            <div class="input">
+                <input type="text" id="expense-title-input" name="title" placeholder="Title">
+                <input type="number" id="expense-amount-input" name="amount" placeholder="₹ 0">
+                <div class="add-expense"><img src="icon/plus.png" alt="Add Expense"></div>
+            </div>
+        </div>
+        <div id="all">
+            <ul class="list"></ul>
+        </div>
+    </div>
+    
+
+    <script src="budget.js"></script>
+
+    
+</body>
+
+</html>
